@@ -60,7 +60,25 @@ After splitting the dataset I standard scaled them, since one of the algorithms 
 
 # Models and Predictions
 ## Metrics
+To measure the performance of my different models I decided to use confusion matrix, which is a table that is used to evaluate the performance of a classification model. It provides a summary of the model's predictions and the actual outcomes for different classes. The key components of a confusion matrix include:
 
+**True Positive (TP)**:
+
+Instances where the model correctly predicts the positive class.
+
+**True Negative (TN)**: Instances where the model correctly predicts the negative class.
+
+**False Positive (FP)**: Instances where the model incorrectly predicts the positive class (Type I error).
+
+**False Negative (FN)**: Instances where the model incorrectly predicts the negative class (Type II error).
+
+From these I can also find other useful metrics such as:
+1. Recall (Sensitivity or True Positive Rate): the ability of a model to correctly identify all relevant instances (True Positives) out of the total actual positive instances. A high recall indicates that the model is capturing a large proportion of positive instances, but it may result in more false positives.
+
+2. Precision (Positive Predictive Value): Precision measures the accuracy of the model's positive predictions, indicating the proportion of correctly predicted positive instances out of the total predicted positive instances.A high precision indicates that when the model predicts a positive instance, it is likely to be correct, but it may miss some positive instances.
+ 
+3. F1 Score: F1 Score is the harmonic mean of precision and recall. It provides a balance between precision and recall and is especially useful when the class distribution is imbalanced. F1 Score ranges from 0 to 1, with higher values indicating a better balance between precision and recall.
+4. Accuracy: It represents the ratio of correctly predicted instances to the total number of instances in the dataset. 
 
 
 
