@@ -52,7 +52,7 @@ As such I looked for duplicates, but since the only unique variable was Ticker I
 
 ![boxplot](https://github.com/uhuybubb/ai_project2024/blob/main/output.png?raw=true)
 
-From the boxplots we can see that "Arrival Delay in Minutes","Distance","Departure Delay in Minutes" have a lot of outliers, however 
+From the boxplots we can see that "Arrival Delay in Minutes","Distance","Departure Delay in Minutes" have a lot of outliers, moreover with the histograms we can also see that they are heavily skewed to the right, meaning that there are many upper outliers. But looking at the skewness of "Departure" and "Arrival" I am afraid that if I drop their Outliers a big part of my dataset will be lost, so instead I hot-encoded them into a binary class which shows which customers had a delayed train or departure.
 
 
 
