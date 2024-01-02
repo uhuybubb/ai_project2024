@@ -49,7 +49,7 @@ The target variable is a binary class, so our task is a binary classification pr
 
 As such I looked for duplicates, but since the only unique variable was Ticker ID I simply set is as index, since if it wasn't unique Python would have warned me; I was able to set it as index and therefore every instance in the dataset is unique. Next I looked at missing values and found out that only 0.3% of my dataset had one 1 variable missing. Since the missing values were so small I chose to simply delete instances with them instead of imputing them. Next I looked for outliers, but because every variable beside "Age","Arrival Delay in Minutes","Distance","Departure Delay in Minutes" were finite classes, I chose to only study these 4 features using boxplot.
 
-
+https://github.com/uhuybubb/ai_project2024/blob/main/output.png?raw=true
 
 
 
