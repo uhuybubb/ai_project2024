@@ -48,10 +48,11 @@ In total there are 25 features, of which 14 are ratings from 1 to 5. The non-rat
 The target variable is a binary class, so our task is a binary classification problem and therefore, we can use classification algorithms like logistic regression,KNN-Neighbors and XG-Boost. But in order to use these algorithms we need to prepare our data by cleaning it.
 
 As such I looked for duplicates, but since the only unique variable was Ticker ID I simply set is as index, since if it wasn't unique Python would have warned me; I was able to set it as index and therefore every instance in the dataset is unique. Next I looked at missing values and found out that only 0.3% of my dataset had one 1 variable missing. Since the missing values were so small I chose to simply delete instances with them instead of imputing them. Next I looked for outliers, but because every variable beside "Age","Arrival Delay in Minutes","Distance","Departure Delay in Minutes" were finite classes, I chose to only study these 4 features using boxplot.
+![histplot](https://github.com/uhuybubb/ai_project2024/blob/main/hist.png?raw=true)
 
 ![boxplot](https://github.com/uhuybubb/ai_project2024/blob/main/output.png?raw=true)
 
-From the boxplots we can see that "Arrival Delay in Minutes","Distance","Departure Delay in Minutes" have a lot of outliers,
+From the boxplots we can see that "Arrival Delay in Minutes","Distance","Departure Delay in Minutes" have a lot of outliers, however 
 
 
 
