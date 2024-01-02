@@ -54,6 +54,14 @@ As such I looked for duplicates, but since the only unique variable was Ticker I
 
 From the boxplots we can see that "Arrival Delay in Minutes","Distance","Departure Delay in Minutes" have a lot of outliers, moreover with the histograms we can also see that they are heavily skewed to the right, meaning that there are many upper outliers. But looking at the skewness of "Departure" and "Arrival" I am afraid that if I drop their Outliers a big part of my dataset will be lost, so instead I hot-encoded them into a binary class which shows which customers had a delayed train or departure.
 
+After cleaning the data I separated my data into 2 datasets, in theory since the date was provided I could hae used the date to separate into a 70/30 split, to better mirror real world conditions, but in the end I decided to separate into a split that would ensure that the test and train data had a similar amount of both Y variable instances to ensure a more fitting model.
+
+After splitting the dataset I standard scaled them, since one of the algorithms I used was KNN-Neighbors, which takes the k nearest neighbors of the new data point (say, according to Euclidean distance) and then assigns the new data point to the category where it counted the most neighbors. As such it is important that all data points are equally important, otherwise if one feature has a broad range and another is quite narrow, the broader one might dominate the model's decision-making process.
+
+# Models and Predictions
+## Metrics
+
+
 
 
 
