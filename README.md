@@ -78,7 +78,11 @@ From these I can also find other useful metrics such as:
 2. Precision (Positive Predictive Value): Precision measures the accuracy of the model's positive predictions, indicating the proportion of correctly predicted positive instances out of the total predicted positive instances.A high precision indicates that when the model predicts a positive instance, it is likely to be correct, but it may miss some positive instances.
  
 3. F1 Score: F1 Score is the harmonic mean of precision and recall. It provides a balance between precision and recall and is especially useful when the class distribution is imbalanced. F1 Score ranges from 0 to 1, with higher values indicating a better balance between precision and recall.
-4. Accuracy: It represents the ratio of correctly predicted instances to the total number of instances in the dataset. 
+4. Accuracy: It represents the ratio of correctly predicted instances to the total number of instances in the dataset.
+
+However a high Accuracy or precision could simply due to overfitting, meaning that our model is too closely resembling the test data and is unable to accurately predict for outliers, as such I also wanted to use the AUC score, which quantifies the overall performance of the model across different threshold values. A higher AUC-ROC score indicates better discrimination between the positive and negative classes.
+
+
 
 
 
