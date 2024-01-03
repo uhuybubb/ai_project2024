@@ -82,12 +82,21 @@ From these I can also find other useful metrics such as:
 
 However a high Accuracy or precision could simply due to overfitting, meaning that our model is too closely resembling the test data and is unable to accurately predict for outliers, as such I also wanted to use the AUC score, which quantifies the overall performance of the model across different threshold values. A higher AUC-ROC score indicates better discrimination between the positive and negative classes.
 
-  Parameters  y_pred_xg  y_pred_log  y_pred_bic
-0   Accuracy   0.961244    0.872868    0.882407
-1  Precision   0.967806    0.866631    0.890039
-2     Recall   0.940533    0.830030    0.826775
-3   F1_Score   0.953974    0.847935    0.857241
-4  AUC_Score   0.958607    0.867413    0.875323
+![model comparison](https://github.com/uhuybubb/ai_project2024/blob/main/model_comparison.png?raw=true)
+
+In the end XG Boost was the model that fared consistently the best. Whereas logistic regression and KNN-neighbors were equally good, however KNN-neighbors was vastly more computationally expensive than the other methods. Probably because in order to find the best number of neighbors I did a gridsearch, this is a brute-force approach to hyperparameter tuning. The main idea behind it is to take a subset of the hyperparameter space and evaluate the model performance for each point in that subset. This subset, organized in a grid-like fashion, is where the name "Grid Search" comes from.
+
+Grid Search offers a systematic approach to hyperparameter tuning, ensuring that the best combination within the defined grid is found. However, it can be computationally expensive and might not be feasible for all problems or datasets. That's why before doing anything I tried to reduce the number of features through the  Bayesian Information Criterion, which penalizes models with more parameters, favoring simpler models when there is a trade-off between model complexity and goodness of fit. However the method was too computationally expensive.
+
+XG Boost was th model that gave me the best results, because XG Boost is an ensemble method that combines multiple
+weak learners (such as decision tree stumps) into a strong learner (here, a weak learner is
+an algorithm that produces models with a low predictive performance; vice versa, a strong
+learner is a learning algorithm that produces models with a high predictive performance).
+
+
+
+
+
 
 
 
