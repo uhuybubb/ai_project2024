@@ -1,6 +1,0 @@
-  Parameters  y_pred_xg  y_pred_log  y_pred_bic
-0   Accuracy   0.961244    0.872868    0.882407
-1  Precision   0.967806    0.866631    0.890039
-2     Recall   0.940533    0.830030    0.826775
-3   F1_Score   0.953974    0.847935    0.857241
-4  AUC_Score   0.958607    0.867413    0.875323
