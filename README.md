@@ -82,7 +82,7 @@ From these I can also find other useful metrics such as:
 
 However a high Accuracy or precision could simply due to overfitting, meaning that our model is too closely resembling the test data and is unable to accurately predict for outliers, as such I also wanted to use the AUC score, which quantifies the overall performance of the model across different threshold values. A higher AUC-ROC score indicates better discrimination between the positive and negative classes.
 
-![model comparison](https://github.com/uhuybubb/ai_project2024/blob/main/model_comparison.png?raw=true)
+![model comparison]([https://github.com/uhuybubb/ai_project2024/blob/main/model_comparison.png?raw=true])
 
 In the end XG Boost was the model that fared consistently the best. Whereas logistic regression and KNN-neighbors were equally good, however KNN-neighbors was vastly more computationally expensive than the other methods. Probably because in order to find the best number of neighbors I did a gridsearch, this is a brute-force approach to hyperparameter tuning. The main idea behind it is to take a subset of the hyperparameter space and evaluate the model performance for each point in that subset. This subset, organized in a grid-like fashion, is where the name "Grid Search" comes from.
 
@@ -95,6 +95,7 @@ learner is a learning algorithm that produces models with a high predictive perf
 
 # Conclusion
 
+Since the XG Boost model was the best model, I looked at the most important features and found out that Boarding Rating had the highest Importance. Therefore if I were to suggest improvements on the services offered by the train firm, I would suggest to focus them on improving the boarding experience.
 
 
 
