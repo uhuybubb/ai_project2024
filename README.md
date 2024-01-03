@@ -82,7 +82,12 @@ From these I can also find other useful metrics such as:
 
 However a high Accuracy or precision could simply due to overfitting, meaning that our model is too closely resembling the test data and is unable to accurately predict for outliers, as such I also wanted to use the AUC score, which quantifies the overall performance of the model across different threshold values. A higher AUC-ROC score indicates better discrimination between the positive and negative classes.
 
-
+  Parameters  y_pred_xg  y_pred_log  y_pred_bic
+0   Accuracy   0.961244    0.872868    0.882407
+1  Precision   0.967806    0.866631    0.890039
+2     Recall   0.940533    0.830030    0.826775
+3   F1_Score   0.953974    0.847935    0.857241
+4  AUC_Score   0.958607    0.867413    0.875323
 
 
 
