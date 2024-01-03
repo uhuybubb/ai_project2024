@@ -93,6 +93,10 @@ weak learners (such as decision tree stumps) into a strong learner (here, a weak
 an algorithm that produces models with a low predictive performance; vice versa, a strong
 learner is a learning algorithm that produces models with a high predictive performance).
 
+# Conclusion
+
+
+
 
 
 
